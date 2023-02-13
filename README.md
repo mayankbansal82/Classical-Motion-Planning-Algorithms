@@ -29,7 +29,7 @@ Breadth-first search (BFS) is a graph search algorithm used for finding the shor
 #### Depth-first search
 Depth-first search (DFS) is a graph search algorithm used for finding a path between two vertices in a graph. It starts at the source vertex and explores as far as possible along each branch before backtracking. The algorithm uses a stack to keep track of the vertices to be explored, where each vertex is added to the stack as soon as it is discovered. DFS may not necessarily find the shortest path between two vertices, as it prioritizes exploring deeper into the graph before backtracking and visiting other vertices at shallower levels.
 
-#### Djikstra's algorithm
+#### Dijkstra's algorithm
 Dijkstra's algorithm is a classic graph search algorithm that finds the shortest path from a start node to a goal node in a weighted graph. The algorithm maintains a priority queue of nodes to be expanded, where the priority is given by the current cost to reach that node. At each step, the node with the lowest cost is expanded and its neighbors are added to the queue, updating their cost if necessary. The algorithm terminates when the goal node is reached.
 
 #### A* algorithm
@@ -45,13 +45,13 @@ The number of steps taken by BFS is 64 while DFS takes 33 steps to find the fina
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/BFSDFS2.png)
 The number of steps taken by BFS is 34 while DFS takes 51 steps to find the final path.
 
-#### Djikstra's and A*
+#### Dijkstra's and A*
 
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD1.png)
-The number of steps taken by Djikstra's is 64 while A* takes 51 steps to find the final path.
+The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find the final path.
 
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD2.png)
-The number of steps taken by Djikstra's is 45 while A* takes 15 steps to find the final path.
+The number of steps taken by Dijkstra's is 45 while A* takes 15 steps to find the final path.
 
 
 
