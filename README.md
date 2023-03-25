@@ -5,6 +5,8 @@ This repository contains implementations of various classical path planning algo
 - Depth-first search based path finding
 - A* algorithm
 - Dijkstra's algorithm
+- Probabilistic Roadmaps (PRM)
+- Rapidly Exploring Random Trees (RRT and RRT*)
 
 ### Prerequisites
 The code is written in Python and requires the following packages:
@@ -13,9 +15,9 @@ The code is written in Python and requires the following packages:
 - csv 
 
 ### Usage
-To run an algorithm, simply navigate to the relevant folder and run the main.py python file. For example, to run the A* and Dijkstra's implementations, navigate to the Astar, Dijkstra Algorithm Implementation folder and run main.py in your terminal or command prompt. The algorithms itself are implemented in the search.py file and main.py generates the grid and start and end points based on map.csv. You can alter the map and the start and end points according to your needs.
+To run an algorithm, simply navigate to the relevant folder and run the main.py python file. For example, to run the A* and Dijkstra's implementations, navigate to the Astar, Dijkstra Algorithm Implementation folder and run main.py in your terminal or command prompt.
 
-**Note:** The order of exploration is right, down, left, up.
+**Note:** The order of exploration is right, down, left, up for Dijkstra and A*.
 
 **Note:** Manhattan distance is used as the heuristic for A*.
 
@@ -35,6 +37,14 @@ Dijkstra's algorithm is a classic graph search algorithm that finds the shortest
 #### A* algorithm
 A* is a best-first search algorithm that finds the shortest path from a start node to a goal node in a weighted graph. Like Dijkstra's, A* maintains a priority queue of nodes to be expanded, but with an additional heuristic that estimates the cost to reach the goal node from each node. The priority of each node is given by the sum of the current cost and the heuristic cost, encouraging the algorithm to prioritize nodes that are likely to lead to the goal.
 
+#### PRM algorithm
+PRM is a motion planning algorithm that works by sampling random points in the environment and connecting them to form a graph. The algorithm then uses probabilistic methods to search the graph for a feasible path. There are different mathods to sample the points including uniform, bridge, gaussian, etc.
+
+#### RRT and RRT* algorithm
+RRT (Rapidly-exploring Random Tree) and RRT* (Rapidly-exploring Random Tree star) are motion planning algorithms commonly used in robotics.
+
+RRT works by incrementally building a tree from a starting position in the search space, exploring the space in a biased manner towards unexplored areas. RRT* is an extension of RRT, which uses an additional step of re-wiring the tree to optimize the paths towards the goal. Both algorithms are probabilistically complete, meaning they will find a solution if one exists with high probability, and are effective in high-dimensional and complex environments. 
+
 ### Results
 
 #### BFS and DFS
@@ -52,6 +62,15 @@ The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find th
 
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD2.png)
 The number of steps taken by Dijkstra's is 45 while A* takes 15 steps to find the final path.
+
+#### PRM
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD1.png)
+The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find the final path.
+
+#### RRT and RRT*
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD1.png)
+The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find the final path.
+
 
 
 
