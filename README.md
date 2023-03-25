@@ -64,12 +64,27 @@ The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find th
 The number of steps taken by Dijkstra's is 45 while A* takes 15 steps to find the final path.
 
 #### PRM
-![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD1.png)
-The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find the final path.
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/Uniform_sampling.png)
+The constructed graph has 977 nodes and 4570 edges. The path length is 259.46.
+
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/Random_sampling.png)
+The constructed graph has 827 nodes and 4038 edges. The path length is 259.61.
+
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/Gaussian_sampling.png)
+The constructed graph has 342 nodes and 1281 edges. The path length is 255.44.
+
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/Bridge_sampling.png)
+The constructed graph has 322 nodes and 1424 edges. The path length is 264.76.
+
 
 #### RRT and RRT*
-![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/AD1.png)
-The number of steps taken by Dijkstra's is 64 while A* takes 51 steps to find the final path.
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT.png)
+It took 613 nodes to find the current path. The path length is 319.43.
+
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
+It took 1297 nodes to find the current path. The path length is 258.28.
+
+
 
 
 
