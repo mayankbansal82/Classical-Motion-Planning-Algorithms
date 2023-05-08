@@ -85,7 +85,7 @@ The constructed graph has 342 nodes and 1281 edges. The path length is 255.44.
 The constructed graph has 322 nodes and 1424 edges. The path length is 264.76.
 
 
-#### RRT and RRT*
+#### RRT, RRT* and Informed RRT*
 ##### RRT
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT.png)
 It took 613 nodes to find the current path. The path length is 319.43.
@@ -93,12 +93,12 @@ It took 613 nodes to find the current path. The path length is 319.43.
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
 It took 1297 nodes to find the current path. The path length is 258.28.
 ##### Informed RRT*
-![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/informed_rrt.png)
 It took 1158 nodes to find the current path and the path length is 249.26.
 
 
 #### D*
-![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/d_star.png)
 
 
 
