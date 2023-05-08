@@ -92,6 +92,13 @@ It took 613 nodes to find the current path. The path length is 319.43.
 ##### RRT*
 ![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
 It took 1297 nodes to find the current path. The path length is 258.28.
+##### Informed RRT*
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
+It took 1158 nodes to find the current path and the path length is 249.26.
+
+
+#### D*
+![alt text](https://github.com/mayankbansal82/Classical-Motion-Planning-Algorithms/blob/main/images/RRT_star.png)
 
 
 
