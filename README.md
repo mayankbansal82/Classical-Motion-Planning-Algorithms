@@ -6,7 +6,7 @@ This repository contains implementations of various classical path planning algo
 - A* algorithm
 - Dijkstra's algorithm
 - Probabilistic Roadmaps (PRM)
-- Rapidly Exploring Random Trees (RRT and RRT*)
+- Rapidly Exploring Random Trees (RRT, RRT* and Informed RRT*)
 
 ### Prerequisites
 The code is written in Python and requires the following packages:
@@ -40,10 +40,13 @@ A* is a best-first search algorithm that finds the shortest path from a start no
 #### PRM algorithm
 PRM is a motion planning algorithm that works by sampling random points in the environment and connecting them to form a graph. The algorithm then uses probabilistic methods to search the graph for a feasible path. There are different mathods to sample the points including uniform, bridge, gaussian, etc.
 
-#### RRT and RRT* algorithm
+#### RRT, RRT* and Informed RRT* algorithms
 RRT (Rapidly-exploring Random Tree) and RRT* (Rapidly-exploring Random Tree star) are motion planning algorithms commonly used in robotics.
 
-RRT works by incrementally building a tree from a starting position in the search space, exploring the space in a biased manner towards unexplored areas. RRT* is an extension of RRT, which uses an additional step of re-wiring the tree to optimize the paths towards the goal. Both algorithms are probabilistically complete, meaning they will find a solution if one exists with high probability, and are effective in high-dimensional and complex environments. 
+RRT works by incrementally building a tree from a starting position in the search space, exploring the space in a biased manner towards unexplored areas. RRT* is an extension of RRT, which uses an additional step of re-wiring the tree to optimize the paths towards the goal. Both algorithms are probabilistically complete, meaning they will find a solution if one exists with high probability, and are effective in high-dimensional and complex environments. Informed RRT* builds upon the RRT* algorithm by incorporating heuristics that guide the exploration towards promising areas of the search space.
+
+#### D*
+D* (pronounced "D-star") is a popular incremental search algorithm that can quickly adapt to changes in an agent's environment. It works by maintaining a search graph of the environment and updating it as the agent moves through it. This is useful for planning paths in a dynamic environment.
 
 ### Results
 
